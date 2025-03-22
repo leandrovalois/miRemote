@@ -14,6 +14,7 @@ import java.net.URL;
 public class MainActivity extends AppCompatActivity {
 
     private String serverIP = "192.168.0.182"; // Substitua pelo IP do computador
+
     private int serverPort = 8080; // Porta do servidor
 
     @Override
@@ -30,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
         ImageButton btnOK = findViewById(R.id.btnOK);
         ImageButton btnVolumeDown = findViewById(R.id.btnVolumeDown);
         ImageButton btnVolumeUp = findViewById(R.id.btnVolumeUp);
-        ImageButton btnNetflix = findViewById(R.id.btnNetflix);
         ImageButton btnBack = findViewById(R.id.btnBack);
         ImageButton btnHome = findViewById(R.id.btnHome);
 
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         btnOK.setOnClickListener(v -> sendCommand("ok"));
         btnVolumeDown.setOnClickListener(v -> sendCommand("volumedown"));
         btnVolumeUp.setOnClickListener(v -> sendCommand("volumeup"));
-        btnNetflix.setOnClickListener(v -> sendCommand("netflix"));
         btnBack.setOnClickListener(v -> sendCommand("back"));
         btnHome.setOnClickListener(v -> sendCommand("home"));
     }
