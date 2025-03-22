@@ -1,0 +1,5 @@
+<!-- res/drawable/round_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#6200EE" /> <!-- Cor de fundo -->
+    <corners android:radius="28dp" /> <!-- Raio para tornar o botão redondo -->
+</shape>

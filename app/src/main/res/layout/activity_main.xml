@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Botão Power (Topo Centralizado) -->
+    <ImageButton
+        android:id="@+id/btnPower"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_power"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão Cima -->
+    <ImageButton
+        android:id="@+id/btnUp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_up"
+        app:layout_constraintBottom_toTopOf="@id/btnOK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botão Esquerda -->
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_left"
+        app:layout_constraintEnd_toStartOf="@id/btnOK"
+        app:layout_constraintTop_toTopOf="@id/btnOK"
+        app:layout_constraintBottom_toBottomOf="@id/btnOK"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão OK (Centro) -->
+    <ImageButton
+        android:id="@+id/btnOK"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_ok"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão Direita -->
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_right"
+        app:layout_constraintStart_toEndOf="@id/btnOK"
+        app:layout_constraintTop_toTopOf="@id/btnOK"
+        app:layout_constraintBottom_toBottomOf="@id/btnOK"
+        android:layout_marginStart="16dp" />
+
+    <!-- Botão Baixo -->
+    <ImageButton
+        android:id="@+id/btnDown"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_down"
+        app:layout_constraintTop_toBottomOf="@id/btnOK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botão Netflix -->
+    <ImageButton
+        android:id="@+id/btnNetflix"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_netflix"
+        app:layout_constraintTop_toBottomOf="@id/btnDown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Botão Voltar -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toBottomOf="@id/btnNetflix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnHome"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Botão Home -->
+    <ImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/ic_home"
+        app:layout_constraintTop_toBottomOf="@id/btnNetflix"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Botão Volume (Ações em cada extremidade) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+        <!-- Volume - -->
+        <ImageButton
+            android:id="@+id/btnVolumeDown"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_volume_down"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Volume + -->
+        <ImageButton
+            android:id="@+id/btnVolumeUp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/round_button"
+            android:src="@drawable/ic_volume_up"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
